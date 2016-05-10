@@ -1,0 +1,17 @@
+/**注册页背景广告*/
+function fn_adsp_login_ad_register() {try {
+/*
+/*Ads for register & login. login_ad
+/*date:20140608
+*/
+(function($){
+	$(function(){
+		var url = 'https://img.vipstatic.com/upload/cmc/2015/11/12/199/11227c0b87a2447eb1a1ad4d51513883.jpg'; // Image url for ad.
+		var $login_ad = $('.login_ad');
+		if( $login_ad.length && url.length ){
+			$login_ad.css('background-image','url(' + url + ')');
+		}
+	});
+})(jQuery);
+} catch (e) {}}
+fn_adsp_login_ad_register();

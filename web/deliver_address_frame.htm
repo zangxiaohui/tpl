@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>收货地址</title>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+<link href="css/addr.css" rel="stylesheet">
+<link href="css/addrMaker.css" rel="stylesheet">
+</head>
+<body>
+<div id="content">
+  <div class="main-wrap">
+    <div class="form-box addr-box">
+      <div class="form-hd">
+        <h3>新增收货地址</h3>
+      </div>
+      <div class="form-bd">
+        <div class="field">
+          <label for="J_Consignee" class="ui-label"><i class="asterisk">*</i>收货人：</label>
+          <input type="text" id="J_Consignee" placeholder="收货人姓名" maxlength="16" class="ui-input ui-input-short error">
+          <span class="ui-tooltips arrow-left-center warning"><i class="icon"></i><span>请输入收货人姓名</span></span> </div>
+        <div class="field field-region">
+          <label for="J_Street" class="ui-label"><i class="asterisk">*</i>地区：</label>
+          <select name="" id="">
+            <option value="">省</option>
+          </select>
+          <select name="" id="">
+            <option value="">市</option>
+          </select>
+          <select name="" id="">
+            <option value="">区</option>
+          </select>
+        </div>
+        <div class="field field-street">
+          <label for="J_Street" class="ui-label"><i class="asterisk">*</i>详细地址：</label>
+          <textarea class="ui-textarea" name="addressDetail" id="J_Street" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息" data-ph="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息">人民西路北 五爱家园5号楼1506</textarea>
+        </div>
+        <div class="field">
+          <label for="J_Mobile" class="ui-label"><i class="asterisk">*</i>手机：</label>
+          <input type="text" id="J_Mobile" placeholder="手机号" class="ui-input">
+          <span class="ui-tooltips arrow-left-center warning hidden"><i class="icon"></i><span>手机格式不正确</span></span> </div>
+        <div class="field">
+          <label for="J_Phone" class="ui-label">备用电话：</label>
+          <input type="text" id="J_Phone" placeholder="手机号/区号-固定电话" class="ui-input">
+          <span class="ui-tooltips arrow-left-center warning hidden"><i class="icon"></i><span>电话格式不正确</span></span></div>
+        <div class="field field－postcode">
+          <label for="J_PostCode" class="ui-label">邮政编码：</label>
+          <input name="post" maxlength="16" placeholder="如您不清楚邮递区号，请填写000000" class="ui-input" id="J_PostCode" type="text" value="">
+          <span class="ui-tooltips arrow-left-center warning hidden"><i class="icon"></i><span>邮政编码不正确</span></span></div>
+        <div class="field field-set-default">
+          <input type="checkbox" checked="" class="i-chk" name="defaultAddress" id="J_SetDefault">
+          <label for="J_SetDefault" class="" >设置为默认收货地址</label>
+        </div>
+        <span id="inputError" class="ui-tooltips warning fluid hidden"><i class="icon"></i><span>请完整上方信息后保存</span></span>
+        <div class="field btn-field">
+          <button type="submit" class="ui-btn ui-btn-primary ui-btn-m">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

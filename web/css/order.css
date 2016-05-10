@@ -1,0 +1,21 @@
+/* 订单列表 */
+.order-table td { border-bottom: 1px dotted #ccc; text-align: center; padding: 10px; }
+.m-item { }
+.m-item .item-pic { float: left; overflow: hidden; width: 80px; height: 80px; border: 1px solid #eee; }
+.m-item .img-loaded { background: #fff }
+.m-item .item-pic a { display: table-cell; width: 80px; height: 80px; vertical-align: middle; text-align: center; *display:block;
+*font-family:Arial;
+*line-height:1;
+*font-size:70px
+}
+.m-item .item-pic img { max-height: 80px; max-width: 80px; vertical-align: middle }
+.m-item .item-info { overflow: hidden; *zoom:1;
+padding-left: 15px; text-align: left; }
+.m-item .item-basic-info { height: 36px; line-height: 18px; overflow: hidden; }
+.m-item .item-other-info { color: #aaa; margin-top: 10px; }
+.due li { }
+.due li .cate { display: inline-block; }
+.due li .txt { display: inline-block; min-width: 100px; _width: 100px; white-space: nowrap; text-align: left; }
+.due .total { font-size: 16px; }
+.due .total .u-price { font-size: 26px; }
+

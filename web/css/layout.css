@@ -1,0 +1,167 @@
+/* Date:2015-11-27 18:39:10 */
+/* ==========================================================================
+   Global
+   ========================================================================== */
+html { font-size: 62.5%; }
+a { color: #666; }
+body { color: #666; font: 12px/1.5 microsoft yahei, Arial, Helvetica, sans-serif; background: #fff; }
+.wrapper { max-width: 1200px; _width: 1200px; margin-left: auto; margin-right: auto; padding: 0 10px; }
+.wrapper:after { content: ""; display: table; clear: both; }
+/* ==================================
+   menu
+   ================================== */
+.site-nav .menu-hd,
+.site-nav .menu-hd .arr { height: 28px; line-height: 28px; }
+.site-nav .menu-hd { padding-right: 20px; padding-left: 6px; }
+.site-nav .menu-bd-panel { padding: 5px 0; }
+.site-nav .menu-hover .menu-hd { border-color: #eee; background: #fff; }
+/* ==========================================================================
+   Site-Nav
+   ========================================================================== */
+.site-nav { background: #f5f5f5; border-bottom: 1px solid #eee; line-height: 30px; }
+.sn-l { float: left; }
+.sn-r { float: right; }
+.sn-menu { float: left; }
+.sn-sep { float: left; overflow: hidden; font-size: 0; width: 0; height: 12px; line-height: 12px; border-left: 1px solid #ccc; margin: 9px 5px; }
+/* 收藏夹 */
+.sn-favorite { padding-left: 16px; position: relative; }
+.sn-favorite i { -webkit-transition: -webkit-transform 0.2s ease-in 0s; transition: -webkit-transform 0.2s ease-in 0s; overflow: hidden; background: url(../images/20130725.png) 0px 0px no-repeat; cursor: pointer; width: 13px; height: 13px; position: absolute; top: 8px; left: 0px; }
+.sn-favorite:hover i { transform: rotate(720deg); -webkit-transform: rotate(720deg) }
+/* menu- 网站地图 */
+.sn-sitemap .menu-bd { right: 0; }
+.sn-sitemap .menu-bd .menu-bd-panel { overflow: hidden; width: 1160px; padding: 19px; }
+.sn-sitemap .mod { float: left; width: 20%; overflow: hidden; }
+.sn-sitemap .mod-wrap { border-right: 1px solid #eee; padding: 0 0 0 5px; margin-right: 20px; }
+/* menu app */
+.sn-mobile .menu-hd { padding-left: 25px; }
+.sn-mobile .g-icon { position: absolute; z-index: 2; left: 5px; top: 5px; width: 13px; height: 22px; background-image: url(../images/20130330A_2.png); background-position: -128px -360px; -webkit-transition: all .2s ease; transition: all .2s ease; }
+.sn-mobile.menu-hover .g-icon { background-position: -128px -399px }
+.sn-mobile .menu-bd-panel { padding: 10px; }
+.sn-mobile .menu-bd img { display: block; margin-bottom: 5px; }
+/* ==========================================================================
+  Mini-Cart
+   ========================================================================== */
+.mini-cart { float: right; position: relative; margin: 30px 15px 0; }
+.mini-cart .nogoods b,
+.mini-cart1 .menu-hd .ci-left,
+.mini-cart1 .menu-hd .num,
+.mini-cart1 .menu-hd .num span { background-image: url(../images/20130330A_1.png); background-repeat: no-repeat; }
+.mini-cart1 .menu-hd { overflow: visible; cursor: pointer; text-align: center; width: 74px; padding: 0 20px 0 30px; border: 1px solid #EFEFEF; background: #F7F7F7; background-position: -115px -84px; height: 30px; line-height: 30px; }
+.mini-cart1 .menu-hd .ci-left { position: absolute; top: 6px; left: 6px; width: 20px; height: 17px; background-position: -121px -90px; }
+.mini-cart1.menu-hover .ci-left { background-position: -121px -120px; }
+.mini-cart1 .ci-right { position: absolute; top: 11px; right: 10px; width: 7px; height: 13px; overflow: hidden; font: 400 13px/1 simsun; color: #999 }
+.mini-cart1 .menu-hd .num { position: absolute; top: -13px; left: 20px; background-position: -133px -279px; padding-left: 6px; color: #fff; line-height: 1.5; }
+.mini-cart1 .menu-hd .num span { float: left; display: block; height: 20px; padding-right: 6px; background-position: 100% -250px; }
+/* mini-cart 第二套样式 */
+.mini-cart2 .menu-hd { overflow: visible; cursor: pointer; text-align: center; width: 74px; padding: 0 28px 0 36px; border: 1px solid #DFDFDF; background: #F9F9F9; height: 30px; line-height: 30px; }
+.mini-cart2 .ci-left { position: absolute; top: 9px; left: 18px; width: 18px; height: 16px; background-image: url(../images/jd2015img.png); background-repeat: no-repeat; background-position: 0 -58px; _background-position: 0 -91px; }
+.mini-cart2.menu-hover .ci-left { background-position: 0 -116px; }
+.mini-cart2 .ci-right { position: absolute; top: 11px; right: 10px; width: 7px; height: 13px; overflow: hidden; font: 400 13px/1 simsun; color: #999 }
+.mini-cart2 .num { position: absolute; top: -4px; left: 104px; padding: 1px 2px; line-height: 1; color: #fff; background-color: #c81623; border-radius: 7px 7px 7px 0; min-width: 12px; text-align: center }
+.mini-cart .menu-bd { width: 350px; right: 0; }
+.mini-cart.menu-hover .menu-hd,
+.mini-cart.menu-hover .menu-bd { background-color: #fff; border: 1px solid #ddd; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .2); -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .2); box-shadow: 0 0 10px rgba(0, 0, 0, .2); }
+.mini-cart.menu-hover .menu-hd { height: 32px; border-bottom-width: 0; }
+.mini-cart.menu-hover .menu-hd:after { content: ""; position: absolute; bottom: -10px; right: 0; width: 134px; height: 10px; background: #fff; }
+.mini-cart .nogoods { padding: 10px 10px 10px 30px; height: 49px; line-height: 49px; overflow: hidden; color: #999; }
+.mini-cart .nogoods b { float: left; width: 56px; height: 49px; background-position: 0 0; }
+.settleup-content { position: relative; z-index: 2; width: 100%; background: #fff }
+.settleup-content .loading { display: block; height: 50px; background: url(../images/loading.gif) no-repeat center center }
+.settleup-content .smt { height: 25px; padding: 6px 8px; line-height: 25px }
+.settleup-content .smc { background: #fff; height: auto!important; height: 344px; max-height: 344px; overflow-y: auto }
+.settleup-content .smb { padding: 8px; background: #F5F5F5; _height: 45px; _padding-top: 15px; _padding-bottom: 0; overflow: hidden; }
+.settleup-content .smb .p-total { float: left; line-height: 29px }
+.settleup-content .smb span { color: #c81623 }
+.settleup-content .smb a { float: right; height: 29px; padding: 0 10px; background: #E4393C; color: #fff; text-align: center; font-weight: 700; line-height: 29px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px }
+.settleup-content ul { margin-top: -1px }
+.settleup-content li { padding: 8px 10px; border-top: 1px dotted #ccc; overflow: hidden; line-height: 17px; vertical-align: bottom; *zoom:1
+}
+.settleup-content li:hover { background: #F5F5F5 }
+.settleup-content .p-img { float: left; width: 50px; height: 50px; border: 1px solid #ddd; margin-right: 10px; }
+.settleup-content .p-name { float: left; width: 120px; height: 52px; overflow: hidden; }
+.settleup-content .p-detail { float: right; text-align: right }
+.settleup-content .p-price { font-weight: 700 }
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.header .wrapper { height: 113px; position: relative; z-index: 99; }
+.logo { position: absolute; padding: 21px 0 0 0; }
+.row { margin-top: 30px; }
+.row .hd { border-bottom: 1px solid #ddd; }
+.row .hd h2 { font-family: "microsoft yahei"; font-weight: 400; float: left; display: inline; line-height: 30px; font-size: 20px; position: relative; padding-left: 40px; color: #333; }
+.row .hd h2 i { position: absolute; top: 2px; left: 0; width: 21px; height: 25px; padding-right: 10px; background: url(../images/floor1new.png) no-repeat 0 0; font-size: 13px; color: #fff; text-align: center; overflow: hidden }
+.floor-current .hd h2 i { background: url(../images/product_home_1.0.0.png?__sprite) no-repeat 0 0; background-position: 0 0; -webkit-animation-name: scaleDisc; -moz-animation-name: scaleDisc; animation-name: scaleDisc; -webkit-animation-duration: 1s; -moz-animation-duration: 1s; animation-duration: 1s }
+.floor-current .hd h2:before { content: ""; position: absolute; top: 2px; left: 0; width: 31px; height: 25px; background: url(../images/product_home_1.0.0.png?__sprite) no-repeat 0 0; background-position: 0 -35px }
+@-webkit-keyframes scaleDisc { 0% {
+opacity:0;
+height:0
+}
+100% {
+opacity:1;
+height:25px
+}
+}
+@-moz-keyframes scaleDisc { 0% {
+opacity:0;
+height:0
+}
+100% {
+opacity:1;
+height:25px
+}
+}
+@keyframes scaleDisc { 0% {
+opacity:0;
+height:0
+}
+100% {
+opacity:1;
+height:25px
+}
+}
+.row .hd .tab-hd { float: right; border: solid 1px #ededed; border-bottom: 0 none; height: 34px; line-height: 34px; }
+.row .hd .tab-hd li { float: left; height: 34px; position: relative; }
+.row .hd .tab-hd li a { float: left; height: 34px; padding: 0 16px; line-height: 34px; background: #fff; border-left: solid 1px #fff; border-right: solid 1px #fff; white-space: nowrap; }
+.row .hd .tab-hd li:hover a { position: absolute; border-left: solid 1px #c81623; border-right: solid 1px #c81623; border-top: solid 3px #c81623; top: -1px; left: -1px; height: 33px; line-height: 30px; color: #c81623; text-indent: 1px; }
+.row .hd .tab-hd li .sep { position: absolute; width: 1px; background: #ccc; overflow: hidden; height: 14px; top: 10px; right: 0; font-size: 0; line-height: 0; }
+.row .hd .tab-hd li:last-of-type .sep,
+.row .hd .tab-hd li:hover .sep { display: none; }
+.floor .side { float: left; width: 330px; overflow: hidden; font-family: "microsoft yahei"; }
+.floor .side-focus { position: relative; width: 330px; background: #e5ebeb; overflow: hidden; }
+.floor .themes { position: relative; padding-left: 10px; height: 92px; margin-top: -190px; overflow: hidden; background: rgba(255, 255, 255, .5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#88FFFFFF, endColorstr=#88FFFFFF)
+}
+.floor .side-focus { position: relative; height: 474px; }
+.floor .side-focus a { display: block; height: 475px; }
+.floor .side-focus a:before { content: ""; position: absolute; width: 80px; height: 350px; top: 0; left: -150px; overflow: hidden; background: -moz-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, .2)), color-stop(100%, rgba(255, 255, 255, 0))); background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%); background: -o-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%); -webkit-transform: skewX(-25deg); -moz-transform: skewX(-25deg) }
+.floor .side-focus a:hover::before { -webkit-transition: left 1s; -moz-transition: left 1s; transition: left 1s; left: 460px }
+/* ==================================
+   Page-nav-bar
+   ================================== */
+/* ==================================
+   Member Sidenav
+   ================================== */
+.col-main { float: left; width: 100%; min-height: 1px; }
+.col-main .main-wrap { margin-left: 150px; }
+.col-aside { float: left; margin-left: -100%; min-height: 1px; overflow: hidden; width: 120px; }
+/* 会员菜单 */
+.u-sidenav dl { margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dotted #ddd; }
+.u-sidenav dt { font-weight: 700; font-size: 14px; color: #000; margin-bottom: 5px; }
+.u-sidenav dd { }
+.u-sidenav dd a { display: block; }
+.u-sidenav dd a:hover { color: #f60; }
+/* 订单列表 */
+.u-table .col-amount { width: 110px; }
+.u-table .col-sum { width: 110px; }
+.u-table .col-status { width: 110px; }
+.u-table .col-op { width: 110px; }
+.u-table thead th { height: 32px; line-height: 32px; background: #f5f5f5; }
+.u-table tbody td { border: 1px solid #e5e5e5; }
+.u-table .sep-row { height: 20px }
+.u-table .sep-row td { border: 0 }
+.u-table .tr-hd { background: #f5f5f5; line-height: 32px; }
+.u-table .tr-hd .dealtime,
+.u-table .tr-hd .order-number { margin: 0 20px; }
+.u-table .tr-hd .del-btn { float: right; display: none; width: 13px; height: 13px; font-size: 0; overflow: hidden; background-position: -23px -132px; margin: 4px 20px 0 20px; }
+.u-table .tr-hd .del-btn:hover { background-position: 0 -132px }
+.u-table tbody:hover .del-btn { display: block; }
+.u-table .tr-bd td { text-align: center; vertical-align: top; padding: 14px; }

@@ -1,0 +1,35 @@
+
+/* ==================================
+   Member Sidenav
+   ================================== */
+/*  登陆  */
+@import url(flowstep.css);
+.login-form,
+.reg-form { width: 450px; margin: 100px auto; }
+.login-form .form-bd,
+.reg-form .form-bd { }
+.login-form .field { padding-left: 120px; }
+.login-form .ui-label { width: 110px; margin-left: -120px; }
+.login-form .tips { width: 360px; margin: 0 auto; display: block; }
+.other-login { }
+.other-login a { float: left; width: 17px; height: 16px; line-height: 16px; background-image: url(../images/social/icons_1_16.png); background-repeat: no-repeat; cursor: pointer; margin-right: 6px; overflow: hidden; text-indent: -9999px; }
+.other-login .s_weibo { background-position: 0 -104px; }
+.other-login .t_weibo { background-position: 0 -260px; }
+.other-login .qzone { background-position: 0 -52px }
+.other-login .renren { background-position: 0 -208px }
+.other-login .weixin { background-position: 0 -1612px }
+.other-login .qq { background-position: 0 -260px; background-position: 0 -2652px }
+/*  注册  */
+.reg-form .field { padding-left: 132px; }
+.reg-form .ui-label { width: 122px; margin-left: -132px; }
+.field-mobileCode .ui-input { width: 100px; }
+.reg-form .ui-btn1 { ont-family: "\5FAE\8F6F\96C5\9ED1", Arial, tahoma, sans-serif; font-size: 16px; width: 140px; height: 40px; line-height: 40px; }
+
+
+/*  退货流程  */
+.refund-form .field .ui-textarea { border: 1px solid #7E9DB7; width: 404px; height: 72px; line-height: 18px; padding: 3px; resize: none; }
+.refund-form .ui-text-counter { margin-left: 10px; }
+/*  基本资料  */
+.basic-info-form .ui-tooltips.info { padding: 6px 15px; }
+.change-group .exchange-icon { display: inline-block; margin-right: 5px; width: 13px; height: 14px; background: url(//member.vipstatic.com/img/myi/exchange-icon.png?64ea47b5); vertical-align: middle; -webkit-transition: All .4s ease-in-out; transition: All .4s ease-in-out }
+.find-brand-content .change-group:hover .exchange-icon { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg) }

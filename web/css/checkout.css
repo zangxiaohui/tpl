@@ -1,0 +1,58 @@
+@import url(flowstep.css);
+@import url(popup.css);
+@import url(order.css);
+@import url(addr.css);
+.checkbar { text-align: right; }
+.checkbar .action { margin: 7px 0; }
+.checkbar .action .back-cart { margin-right: 30px; }
+.checkbar .action .go-wrapper { display: inline-block; }
+.checkbar .action .go-btn { position: relative; display: inline-block; vertical-align: middle; width: 182px; height: 36px; line-height: 36px; cursor: pointer; text-align: center; font-size: 14px; font-weight: 700; background: #b10000; color: #fff; }
+.checkbar .action .go-btn-disable { background-color: #818181; }
+/* mod */ 
+.confirm-order .box { margin-bottom: 30px; }
+.confirm-order .box-hd { margin-bottom: 10px; overflow: hidden; *zoom:1;
+line-height: 30px; background: #fafafa; }
+.confirm-order .box-hd h3 { float: left; }
+.confirm-order .box-bd { overflow: hidden; }
+/* ==========================================================================
+   addr
+   ========================================================================== */
+.member-info-item { padding: 15px 12px 13px 28px; line-height: 16px; border-bottom: 1px dashed #ececec }
+.member-info-item .member-name { margin-right: 20px; font-size: 14px }
+.member-info-item .fa { color: #dad9d9; float: left; margin-top: 2px; margin-left: -28px }
+.member-info-item .member-text { display: inline-block; *display:inline;
+*zoom:1
+}
+.member-info-item address { height: 44px; line-height: 22px; word-break: break-all; word-wrap: break-word; overflow: hidden }
+.member-info-item .icon-address-local { margin-top: 3px }
+.member-info-item .icon-address-time { margin-top: 1px }
+.member-info-title { padding-top: 10px; padding-right: 58px; height: 21px; line-height: 21px }
+.member-info-phone .member-mobile { margin-right: 20px }
+.member-info-local { padding-top: 10px; padding-bottom: 6px; border-bottom: none }
+.addr-item { position: relative; display: inline-block; vertical-align: top; width: 302px; margin: 0 14px; }
+.addr-item:hover { color: #333; }
+.addr-item .addr-inner { position: relative; cursor: pointer; width: 268px; height: 153px; padding: 6px 16px; border-left: 1px solid #ebebeb; border-right: 1px solid #ebebeb; box-shadow: 0 1px 2px rgba(0,0,0,.12); background-image: url(../images/sprites-y.png?4d6399aa); background-position: -5px -340px; background-repeat: repeat-x; z-index: 1 }
+.addr-item .deftip,
+.addr-item .curmarker,
+.member-info-op { position: absolute; z-index: 1; display: none; }
+.addr-item .deftip { top: 22px; right: 12px; color: #b7b7b7; }
+.addr-item .curmarker { right: -1px; bottom: 0; background-image: url(../images/sprites.png?7a9640e4); background-position: -369px -41px; width: 38px; height: 38px; }
+.member-info-op { right: 12px; bottom: 16px; }
+.member-info-op .ui-btn-xs { background-color: #fafafa; border: 1px solid #c2c2c2; min-width: 24px; _width: 24px; padding: 0 5px; height: 20px; line-height: 20px; display: inline-block; border-radius: 3px; text-align: center; vertical-align: top; -webkit-transition: .3s; transition: .3s; cursor: pointer; }
+.member-info-op .setdefault { position: absolute; right: 0; bottom: 108px; z-index: 2 }
+.addr-cur .addr-inner { border-right-color: #c6c4c4; border-left-color: #c6c4c4; background-position: -5px 0; }
+.addr-cur .curmarker { display: block; }
+.addr-cur .member-info-op { right: 20px; }
+.addr-def .setdefault { display: none; }
+.addr-def .deftip { display: block; }
+.addr-item:hover .member-info-op { display: block }
+.addr-inner:hover { border-right-color: #d3d1d1; border-left-color: #d3d1d1 }
+.addr-item-add-hover,
+.addr-item-add:hover { border-color: #d3d1d1 }
+.addr-item-add-hover .glyphicon-addr-add,
+.addr-item-add-hover p,
+.addr-item-add:hover .glyphicon-addr-add,
+.addr-item-add:hover p { color: #888 }
+.popup { position: absolute; z-index: 199999; border: 10px solid #b4b4b4; display: none; background: #fff; width: 900px; }
+.popup .popup-hd { background: #e6e6e6; border-bottom: 1px solid #d9d9d9; height: 35px; line-height: 35px; padding-left: 10px; font-weight: 700; font-size: 14px; }
+.popup .popup-bd { padding: 10px 0; }

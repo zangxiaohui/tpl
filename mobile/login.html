@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="yes" name="apple-touch-fullscreen">
+<meta content="telephone=no,email=no" name="format-detection">
+<script src="js/flexible_css.js"></script>
+<script src="js/flexible.js"></script>
+<link rel="stylesheet" href="css/login.css">
+<title>账户登录</title>
+</head>
+<body>
+<div class="head"> 账户登录 </div>
+<form id="loginForm" class="mlogin" action="" method="post">
+  <!--服务端错误提示-->
+  <div class="field autoClear">
+    <div class="label">账户</div>
+    <div class="field-control">
+      <input type="text" class="input-required" name="TPL_username" placeholder="手机号/邮箱/会员名" value="" id="username">
+    </div>
+    <div class="icon-clear"><i class="iconfont">&#xe613;</i></div>
+  </div>
+  <div class="field autoClear">
+    <div class="label">登录密码</div>
+    <div class="field-control">
+      <input type="password"  class="input-required" name="TPL_password" placeholder="请输入密码" value="" id="password">
+    </div>
+    <div class="icon-clear"><i class="iconfont">&#xe613;</i></div>
+    <div class="pwd pwd-show" id="show-pwd"></div>
+  </div>
+  <div class="checkcode-wrap">
+    <div id="checkcode"></div>
+  </div>
+  <div class="submit">
+    <button type="submit" class="button" id="submit-btn">登 录</button>
+  </div>
+  <div class="other-link"> <a href="#" class="ft-left"></a> <a href="//reg.taobao.com/member/new_register.jhtml?TPL_redirect_url=" class="ft-right">免费注册</a> </div>
+</form>
+</body>
+</html>

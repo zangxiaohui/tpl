@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>确认订单</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/checkout.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper mt20" style="width:900px;">
+  <div class="confirm-order ">
+    <section class="box address-box">
+      <div class="box-hd">
+        <h3>收货信息</h3>
+      </div>
+      <div class="box-bd">
+        <ul class="addr-list cf">
+          <li class="addr-item addr-cur addr-def">
+            <div class="addr-inner">
+              <div class="member-info-item member-info-consignee"> <i class="fa fa-user"></i>
+                <div class="member-text"> <span class="member-consignee" title="臧小慧">臧小慧</span> </div>
+              </div>
+              <div class="member-info-item member-info-phone"> <i class="fa fa-phone"></i>
+                <div class="member-text"> <span class="member-mobile">180*****783</span> </div>
+              </div>
+              <div class="member-info-item member-info-local" title="江苏省.无锡市.崇安区.崇安寺街道 人民中路22号财富大厦1006"> <i class="fa fa-home"></i>
+                <address class="member-text">
+                盐城市东台市 范公路111号东海国际南大门
+                </address>
+              </div>
+            </div>
+            <ins class="deftip">默认地址</ins><a href="javascript:void(0);" class="setdefault J_address_set_default">设为默认</a>
+            <div class="member-info-op"> <a href="javascript:void(0);" class="ui-btn-xs J_address_modify" onClick="popupDiv('J_AddrMaker')">修改</a> <a class="ui-btn-xs  J_address_delete" href="javascript:void(0);">删除</a> </div>
+          </li>
+          <li class="addr-item">
+            <div class="addr-inner">
+              <div class="member-info-item member-info-consignee"> <i class="fa fa-user"></i>
+                <div class="member-text"> <span class="member-consignee" title="臧小慧">臧小慧</span> </div>
+              </div>
+              <div class="member-info-item member-info-phone"> <i class="fa fa-phone"></i>
+                <div class="member-text"> <span class="member-mobile">180*****783</span> </div>
+              </div>
+              <div class="member-info-item member-info-local" title="江苏省.无锡市.崇安区.崇安寺街道 人民中路22号财富大厦1006"> <i class="fa fa-home"></i>
+                <address class="member-text">
+                盐城市东台市 范公路111号东海国际南大门
+                </address>
+              </div>
+            </div>
+            <ins class="deftip">默认地址</ins><a href="javascript:void(0);" class="setdefault J_address_set_default">设为默认</a>
+            <div class="member-info-op"> <a href="javascript:void(0);" class="ui-btn-xs J_address_modify" onClick="popupDiv('J_AddrMaker')">修改</a> <a class="ui-btn-xs  J_address_delete" href="javascript:void(0);">删除</a> </div>
+          </li>
+        </ul>
+        <div class="address-action"><a class="manageAddr" href="deliver_address.htm">管理收货地址</a><a class="showAll">显示全部地址</a>
+          <button class="btn createAddr" type="button">使用新地址</button>
+        </div>
+      </div>
+    </section>
+    <section class="box payment-box">
+      <div class="box-hd">
+        <h3>付款方式</h3>
+      </div>
+      <div class="box-bd">
+        <ul>
+          <li class="active"><span class="ui-radio">
+            <input type="radio" id="J_payment_1" name="payment_dt" value="" class="ui-radio-normal" title="在线支付" simulate="done" checked="checked">
+            <label for="J_payment_1" class="ui-radio-simulation"></label>
+            </span>
+            <label for="J_payment_1" class="ui-label">在线支付</label>
+          </li>
+          <li><span class="ui-radio">
+            <input type="radio" id="J_payment_2" name="payment_dt" value="" class="ui-radio-normal" title="线下汇款" simulate="done">
+            <label for="J_payment_2" class="ui-radio-simulation"></label>
+            </span>
+            <label for="J_payment_2" class="ui-label">线下汇款</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="box delivery-box">
+      <div class="box-hd">
+        <h3>送货时间</h3>
+      </div>
+      <div class="box-bd">
+        <ul>
+          <li><span class="ui-radio">
+            <input type="radio" id="J_delivery_nolimit" name="transport_dt" value="" class="ui-radio-normal" title="不限送货时间" simulate="done" checked="checked">
+            <label for="J_delivery_nolimit" class="ui-radio-simulation"></label>
+            </span>
+            <label for="J_delivery_nolimit" class="ui-label">不限送货时间</label>
+          </li>
+          <li><span class="ui-radio">
+            <input type="radio" id="J_delivery_weekday" name="transport_dt" value="" class="ui-radio-normal" title="工作日送货" simulate="done">
+            <label for="J_delivery_weekday" class="ui-radio-simulation"></label>
+            </span>
+            <label for="J_delivery_weekday" class="ui-label">工作日送货(适合于办公地址)</label>
+          </li>
+          <li> <span class="ui-radio">
+            <input type="radio" id="J_delivery_weekend" name="transport_dt" value="" class="ui-radio-normal" title="周六日、节假日" simulate="done">
+            <label for="J_delivery_weekend" class="ui-radio-simulation"></label>
+            </span>
+            <label for="J_delivery_weekend" class="ui-label">周六日、节假日</label>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="box invoice-box">
+      <div class="box-hd">
+        <h3>发票信息</h3>
+      </div>
+      <div class="box-bd">
+        <div id="invoice_b_201729169024" class="invoice invoice-dd">
+          <div class="invoice-hd">
+            <input class="invoice-check" type="checkbox" id="invoice_b_201729169024chk" data-clk="buy-order/mod/invoice:toggle">
+            <label for="invoice_b_201729169024chk">开具发票</label>
+          </div>
+          <div class="invoice-bd">
+            <div class="category"><span>发票类型：</span>
+              <label class="first">
+                <input type="radio" checked="" name="category1456562026374" value="0">
+                纸质发票</label>
+            </div>
+            <div class="types typesWithOption"><span>发票信息：</span>
+              <label>
+                <select data-type="option">
+                  <option selected="" value="0">食品</option>
+                  <option value="1">家居用品</option>
+                  <option value="2">化妆品</option>
+                  <option value="3">酒</option>
+                  <option value="4">日用品</option>
+                  <option value="5">饮料</option>
+                  <option value="6">服饰</option>
+                </select>
+              </label>
+              <span class="hd">抬头：</span><span class="bd"><span title="王国富" class="title">王国富</span><a title="修改发票抬头" href="javascript:void(0);" data-spm-click="gostr=/tmalljy;locaid=d003001001001" tabindex="0" class="modify abtn" data-clk="buy-order/mod/invoice:modifyTitle" data-spm-anchor-id="a220l.1.a22015.d003001001001">修改</a></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mod orders">
+      <div class="mod-wrap">
+        <div class="mod-hd">
+          <h3>确认订单信息</h3>
+          <a href="#" class="return-edit fr">返回修改购物车</a> </div>
+        <div class="mod-bd">
+          <table class="order-table" summary="我的订单">
+            <colgroup>
+            <col class="col-item" width="40%">
+            <!-- <col class="col-consignee"> -->
+            <col class="col-price" width="15%">
+            <col class="col-amount" width="15%">
+            <col class="col-discount" width="15%">
+            <col class="col-sum" width="15%">
+            <!-- <col class="col-status"> --> 
+            <!-- <col class="col-op"> -->
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="th-item">订单详情</th>
+                <th class="th-price">单价</th>
+                <th class="th-amount">数量</th>
+                <th class="th-discount">优惠</th>
+                <th class="th-sum">小计</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-item"><div class="m-item cf">
+                    <div class="item-pic J_ItemPic img-loaded"><a href="#"><img src="images/pic.jpg"></a></div>
+                    <div class="item-info">
+                      <div class="item-basic-info"> <a href="#">绿帮宝适超薄干爽纸尿裤XL128*2 婴儿宝宝尿不湿 官方旗舰店 正品</a> </div>
+                      <div class="item-other-info">充值号码：180****6783</div>
+                    </div>
+                  </div></td>
+                <td class="td-price">¥99.00</td>
+                <td class="td-amount">x1</td>
+                <td class="td-discount">--</td>
+                <td class="td-sum">¥99.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="checkbar">
+      <div class="checkout">
+        <ul class="due">
+          <li> <span class="cate">总商品金额：</span> <span class="txt">￥10000.90</span></li>
+          <li> <span class="cate">商品优惠：</span> <span class="txt">-￥0.00</span></li>
+          <li class="total"> <span class="cate">应付总额：</span><span class="txt"> <span class="price  h"><span class="u-yen">¥</span><em class="u-price">100.90</em></span></span></li>
+        </ul>
+      </div>
+      <div class="summary">
+        <p>寄送至： 江苏 无锡市 滨湖区 胡埭镇  胡埭工业园区新科3路18号 </p>
+      </div>
+      <div class="action"> <a href="javascript:void(0);" class="back-cart">返回购物车修改</a>
+        <div class="go-wrapper"><a href="javascript:void(0);" class="go-btn" title="提交订单">提交订单<s></s></a></div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="popup addrmaker" id="J_AddrMaker">
+  <div class="popup-hd">修改地址</div>
+  <div class="popup-bd">
+    <iframe frameborder="0" border="0" style="border: none; width: 800px; height: 400px; margin: auto; display: block;" src="deliver_address_frame.htm?"></iframe>
+  </div>
+  <a href="#hide" title="关闭" class="popup-hide" data-spm-anchor-id="a220l.1.0.0"></a></div>
+</body>
+</html>

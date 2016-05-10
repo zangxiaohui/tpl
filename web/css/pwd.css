@@ -1,0 +1,24 @@
+@import url(flowstep.css);
+.main-pwd { margin: 0 auto; width: 650px; padding-top: 50px; }
+.flowstep { width: auto; }
+.ui-input-text { line-height: 32px; font-size: 14px; }
+/* 修改密码 */
+.pwd-form .field { padding-left: 220px; }
+.pwd-form .ui-label { width: 210px; margin-left: -220px; }
+/* verification step1 */
+.vf-form .field { padding-left: 180px; margin: 20px 0; }
+.vf-form .ui-label { width: 170px; margin-left: -180px; }
+#auth-img { border: 1px solid #bfbdbf; vertical-align: top; margin-left: 5px; width: 57px; height: 30px; }
+.u-code-change { display: inline-block; line-height: 32px; vertical-align: top; padding-left: 5px; }
+/* verification step2 */
+.ui-tip { font-size: 14px; margin: 50px 0 10px; }
+.ui-tip em { font-size: 16px; font-weight: 700; color: #333; }
+.select-strategy { padding-left: 100px; }
+.select-strategy li { position: relative; padding: 30px 0 0; }
+.select-strategy li .icon { display: inline-block; vertical-align: top; background-image: url(../images/safe/sprite.png?a2972844); width: 40px; height: 40px }
+.select-strategy li .icon-phone { background-position: -45px -45px; }
+.select-strategy li .icon-email { background-position: 0 -90px; }
+.select-strategy li .desc { display: inline-block; *display:inline;
+padding-left: 20px; width: 300px; }
+.select-strategy li .desc h3 { font-size: 16px; }
+.select-strategy li a { margin: 9px 0 0 10px; }

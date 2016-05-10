@@ -1,0 +1,78 @@
+/* ==========================================================================
+   sortbar
+   ========================================================================== */
+.sortbar { margin: 30px 0; height: 39px; background-color: #f5f5f5; border: solid 1px #e8e8e8; }
+.sortbar .sorts { float: left; line-height: 39px }
+.sortbar .sorts .sort { float: left }
+.sortbar .sorts .link { float: left; height: 39px; margin-left: -1px; padding: 0 19px; border-left: solid 1px #f5f5f5; border-right: solid 1px #f5f5f5; color: #6d6d6d }
+.sortbar .sorts .active,
+.sortbar .sorts .link:hover { position: relative; z-index: 1; background-color: #fff; border-color: #e5e5e5; color: #f450a2 }
+.sortbar .paging { float: right; line-height: 39px }
+.sortbar .paging li { float: left; height: 39px; }
+.sortbar .paging .curr em { color: #f450a2 }
+.sortbar .paging li a { float: left; padding: 0 8px; height: 39px }
+.sortbar .paging .item-total { margin-right: 10px; border-right: 1px solid #ddd; height: 15px; line-height: 15px; margin-top: 12px; padding-right: 10px; }
+.sortbar .styles { float: right }
+.sortbar .styles .item { float: left; border-left: solid 1px #e5e5e5; }
+.sortbar .styles .link { float: left; width: 40px; height: 39px; text-align: center; line-height: 39px; }
+.sortbar .styles .active,
+.sortbar .styles .link:hover { background: #fff; color: #f450a2; }
+.sortbar .sorts .has-droplist { position: relative }
+.sortbar .sorts .has-droplist-hover { *z-index:1
+}
+.sortbar .sorts .has-droplist-hover .droplist { display: block }
+.sortbar .sorts .droplist { display: none; position: absolute; z-index: 2; top: -1px; left: -1px; border: solid 1px #ccc; background: #fff; -webkit-box-shadow: 0 3px 3px rgba(0,0,0,.1); -moz-box-shadow: 0 3px 3px rgba(0,0,0,.1); box-shadow: 0 3px 3px rgba(0,0,0,.1) }
+.sortbar .sorts .droplist .sort { float: none; white-space: nowrap }
+.sortbar .sorts .droplist .link { border: none; margin-left: 0; padding-right: 30px }
+/* ==================================
+   filter
+   ================================== */
+/* crumb */
+.filter-breadcrumb { padding: 10px 0; }
+.filter-breadcrumb h2 { float: left; margin-right: 5px; font-weight: 300; }
+.filter-breadcrumb ul { float: left; }
+.filter-breadcrumb li { float: left; }
+.filter-breadcrumb .param-selected { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; position: relative; cursor: pointer; background-color: #fff; border: 1px dotted #f10180; padding: 0 20px 0 10px; max-width: 200px; margin: 0 5px; }
+.filter-breadcrumb .param-selected .fa { position: absolute; right: 6px; top: 0; line-height: 18px; }
+.filter-breadcrumb .param-selected:hover { border-style: solid; }
+.filter-breadcrumb .param-selected:hover .fa { color: #f10180; }
+/* group */
+.filter-sect-group { border: 1px solid #ddd; }
+.filter-sect { position: relative; border-bottom: 1px solid #ddd; }
+.filter-sect:last-child { border-bottom: none }
+.filter-head { position: absolute; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 300; left: 10px; top: 10px; max-width: 80px; color: #999; }
+.filter-body { padding: 0 100px 0 100px; }
+.filter-cont { overflow: hidden; height: 36px; }
+.filter-cont.show2line { height: 72px; }
+.filter-sect .item { float: left; margin: 9px 40px 9px 0; height: 18px; position: relative; }
+.filter-sect .item:hover { color: #f60; }
+.filter-sect .item .ico-check { display: none; width: 11px; height: 11px; background-image: url(../images/TB1Pk8OKFXXXXcDXXXX6sGuHVXX-458-458.png); background-repeat: no-repeat; background-position: -48px -423px; position: absolute; left: 0; top: 3px; }
+.filter-sect .selected .ico-check { background-position: -69px -423px; }
+.filter .fa { padding-left: 3px; }
+/* filter action */
+.filter-body .action { display: none; text-align: center; }
+.filter-body .action .cancel,
+.filter-body .action .submit { margin: 5px; }
+.filter-foot { position: absolute; right: 10px; top: 10px; }
+.filter-foot .switch-multi,
+.filter-foot .show-more,
+.filter-foot .show-less { float: left; cursor: pointer; white-space: nowrap; }
+.filter-foot .switch-multi { padding: 0 3px; border: 1px solid #c8c8c8; height: 16px; margin-left: 16px; }
+.filter-foot .show-less { display: none; }
+.multi-mode .item .ico-check,
+.multi-mode .filter-body .action { display: block }
+.multi-mode .switch-multi { display: none }
+.multi-mode .item { padding-left: 16px; }
+.expand-mode .filter-cont { height: auto; }
+.expand-mode .filter-foot .show-more { display: none }
+.expand-mode .filter-foot .show-less { display: block }
+/* filter-sect-img */
+.filter-sect-img .filter-cont { height: 50px; padding: 10px 0; }
+.filter-sect-img .item { display: block; border: 1px solid #e8e4e5; height: 48px; margin: 0 -1px -1px 0; width: 98px; text-align: center; padding: 0; }
+.filter-sect-img .item img { width: 100%; height: 100%; }
+.filter-sect-img .item .txt { display: none; width: 100%; height: 32px; padding-top: 16px; line-height: 16px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; background-color: #fff; color: #333; position: absolute; left: 0; top: 0 }
+.filter-sect-img .item:hover { border-color: #f10180; z-index: 1; position: relative; }
+.filter-sect-img .item:hover .txt { display: block }
+.filter-sect-img .item .ico-check { left: auto; top: auto; right: 1px; bottom: 1px; }
+.price-range { margin-top: 8px; }
+.price-range input { width: 45px; padding: 0 4px; border: 1px solid #ddd; background: #fff; font-family: arial; height: 18px; line-height: 18px; vertical-align: middle; }

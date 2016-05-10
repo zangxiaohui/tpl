@@ -1,0 +1,105 @@
+.order { margin-bottom: 20px; }
+.cart,
+.float-bar { width: 990px; margin: 0 auto }
+.ui-checkbox { margin-top: -2px; }
+.h { color: #f10180 !important; }
+a:hover { text-decoration: underline; color: #f10180; }
+/* table */
+.order-table td { vertical-align: top; border-bottom: 1px dotted #ccc; }
+.th-chk,
+.td-chk { width: 45px }
+.th-item,
+.td-item { width: 302px }
+.th-info,
+.td-info { width: 172px; }
+.th-price,
+.td-price { width: 120px }
+.th-amount,
+.td-amount { width: 120px }
+.th-sum,
+.td-sum { width: 105px }
+.th-op,
+.td-op { width: 84px; }
+/* th */
+.masthead th { height: 50px; line-height: 50px; text-align: left; font-weight: 300; }
+.th-chk { position: relative; height: 50px }
+.th-chk .select-all { position: absolute; left: 0; top: 0; width: 80px }
+.th-item .td-inner { padding-left: 91px }
+/* td */
+.order-table td .td-inner { padding: 10px 0; }
+.price-original { color: #9c9c9c; text-decoration: line-through }
+.price-now { color: #3c3c3c; font-weight: 700 }
+.td-op a { display: block }
+.td-op a { padding-bottom: 3px }
+.td-chk { position: relative; overflow: hidden }
+.td-chk .cart-checkbox,
+.td-chk .s-checkbox { margin: 0 10px 0 0; float: right }
+.shop { position: relative; height: 38px; background: #fff; line-height: 38px; padding-left: 15px; overflow: hidden }
+/* ==================================
+   total
+   ================================== */
+.cart-total { padding: 20px; }
+.cart-total .price-panel { text-align: right; }
+.cart-total .price-panel li { position: relative; margin-bottom: 5px; padding-right: 110px; line-height: 21px; }
+.cart-total .price-panel .qty { margin: 0 3px; font-family: Arial; }
+.cart-total .price-panel .price { position: absolute; top: 0; right: 0; color: #333; font-size: 14px; }
+.cart-total .total-amount .price .u-price { font-size: 18px; }
+/* ==================================
+   float-bar
+   ================================== */
+.fixed-bottom { bottom: 0; z-index: 9999 }
+.float-bar { position: relative }
+.float-bar-holder { position: relative; height: 50px }
+.float-bar-wrapper { height: 50px; line-height: 50px; overflow: hidden; background: #e5e5e5; }
+.float-bar .select-all,
+.float-bar .operations,
+.float-bar .operations a,
+.float-bar .amount-sum,
+.float-bar .amount-sum em,
+.float-bar .amount-sum .txt,
+.float-bar .price-sum,
+.float-bar .price-sum .txt,
+.float-bar .price-sum .price,
+.float-bar .btn-area { float: left }
+.float-bar .select-all { padding-left: 5px }
+.float-bar .operations a { margin-left: 25px; }
+.float-bar-right { position: absolute; right: 0; top: 0; z-index: 4; padding-left: 20px }
+.float-bar .amount-sum,
+.float-bar .price-sum { color: #3c3c3c }
+.float-bar .price-sum .price { font-size: 18px; }
+.float-bar .amount-sum em,
+.float-bar .price-sum .price em { font-weight: 700; font-family: tohoma, arial }
+.float-bar .amount-sum em { padding: 0 5px; font-size: 18px; }
+.float-bar .price-sum .price em { padding: 0 3px; font-size: 22px; }
+.float-bar .submit-btn { line-height: 48px; height: 48px; padding: 0; width: 162px; }
+/* ==================================
+   底部
+   ================================== */
+.cart-empty { height: 98px; padding: 80px 0 120px 341px; color: #333; padding-left: 341px; background: url(../images/no-login-icon.png) 250px 102px no-repeat; }
+.cart-empty ul { padding-top: 23px; }
+.cart-empty ul .txt { font-size: 14px; }
+/* cart-filter-bar */
+.cart-filter-bar { overflow: hidden; font-size: 12px; position: relative }
+.cart-filters { overflow: hidden; float: left; display: none }
+.cart-filters li { float: left; margin-right: 25px; display: none }
+.cart-filters li a { display: block; color: #404040; _float: left }
+.cart-filters li a:hover { text-decoration: none }
+.cart-filters .active { padding-right: 15px; background-position: 100% -375px; margin-right: 30px; display: block }
+.cart-filters .active a { color: #696969; font-weight: 700; background-position: -257px -345px; padding-left: 15px }
+.cart-filter-bar .cart-sum { position: absolute; right: 0; top: 0; height: 25px; line-height: 25px }
+.cart-sum .price { color: #404040; font-family: Arial, Verdana; font-weight: 700; margin-right: 5px; color: #f40 }
+.cart-sum .price em { font-family: Verdana, Arial; padding-left: 2px; font-weight: 700 }
+.cart-sum .submit-btn { display: inline-block; width: 55px; color: #fff; background: #f40; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; border-radius: 2px; text-align: center; cursor: pointer; text-decoration: none }
+.cart-sum .submit-btn:hover { background: #f22d00 }
+.switch-cart { overflow: hidden; height: 33px }
+.switch-cart li { float: left; font-weight: 700; font-size: 16px; height: 16px; line-height: 1.1; font-family: 'Hiragino Sans GB', 'Lantinghei SC', 'Microsoft Yahei', SimSun; text-align: center; padding: 0 0 15px 0; cursor: pointer; margin-left: -1px }
+.switch-cart li a { padding-left: 25px; }
+.switch-cart li .pipe { width: 1px; height: 12px; display: inline-block; background: #e8e8e8 }
+.switch-cart .first a { padding-left: 15px }
+.switch-cart li a a:hover { color: #3c3c3c }
+.switch-cart .current a em { color: #f40 }
+.switch-cart li .num { color: #f40; font-size: 14px; margin: 0 30px 0 5px; font-weight: 400 }
+.switch-cart .disabled,
+.switch-cart .disabled a { cursor: not-allowed }
+.wrap-line { clear: both; background: #e6e6e6; height: 2px; position: relative }
+.wrap-line .floater { background: #f40; height: 2px; width: 0; position: absolute; top: 0; left: 0; overflow: hidden }

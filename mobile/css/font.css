@@ -1,0 +1,31 @@
+div[class$="dsk"] { z-index: 99 }
+@font-face { font-family: myapp-mytaobao-iconfont; font-weight: 400; font-style: normal; src: url(../fonts/font_1437363449_237427.eot?1445253578) format('embedded-opentype'), url(../fonts/font_1437363449_237427.woff?1445253578) format('woff') }
+[class^=icon-]:before,
+[class*=icon-]:before { display: inline-block; font-family: myapp-mytaobao-iconfont; font-style: normal; font-weight: 400; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale }
+[class^=icon-], [class*=icon-] {
+display:inline-block
+}
+.icon-deliver:before { content: "" }
+.icon-evaluate:before { content: "" }
+.icon-pay:before { content: "" }
+.icon-send:before { content: "" }
+.icon-ticket:before { content: "" }
+.icon-form:before { content: "" }
+.icon-right:before { content: "" }
+.icon-refund:before { content: "" }
+.icon-vip:before { content: "" }
+.icon-frend:before { content: "" }
+.icon-taoxiaopu:before { content: "" }
+.icon-wang:before { content: "" }
+.icon-cart:before { content: "" }
+.icon-alipay:before { content: "" }
+.icon-home:before { content: "" }
+.icon-home_fill:before { content: "" }
+.icon-back:before { content: "" }
+.icon-search:before { content: "" }
+.icon-wifi:before { content: "" }
+.icon-location:before { content: "" }
+.icon-comment:before { content: "" }
+.icon-phone:before { content: "" }
+.icon-caipiao:before { content: "" }
+.icon-jipiao:before { content: "" }

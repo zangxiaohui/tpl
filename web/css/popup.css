@@ -1,0 +1,23 @@
+.tc-popup { position: absolute; z-index: 199999; border: 10px solid #b4b4b4; display: none; background: #fff }
+.tc-popup .tc-popup-header { background: #e6e6e6; border-bottom: 1px solid #d9d9d9; height: 35px; line-height: 35px; padding-left: 10px; font-weight: 700; font-size: 14px }
+.tc-popup .tc-popup-content { padding: 10px 0 }
+.tc-popup .tc-popup-hide { position: absolute; width: 16px; height: 16px; top: 8px; right: 8px; background: url(//img.alicdn.com/tps/i2/T1vq9yXmRTXXaZ_F7_-126-41.png) no-repeat -32px -25px }
+.tc-popup .tc-popup-hide:hover { background-position: -48px -25px }
+.tc-modal-popup .tc-popup-hide { visibility: hidden }
+.tc-mask { position: fixed; _position: absolute; z-index: 199990; background: #333; filter: alpha(opacity=80); opacity: .8; width: 100%; height: 100%; top: 0; left: 0; display: none }
+.tc-gracetip { position: absolute; border: 1px solid #fee581; background: #fff5cc; padding: 5px 20px; color: #666 }
+.tc-gracetip .tc-popup-header,
+.tc-gracetip .tc-popup-hide { display: none }
+.tc-gracetip .tc-popup-content { padding: 0 }
+.tc-mask-gracetip { filter: alpha(opacity=0); opacity: 0; background: transparent }
+/* ==================================
+   弹出窗口
+   ================================== */
+.popbox { display: none; position: absolute; }
+.popbox .pop-wrap { background: #fff; padding: 20px; }
+.popbox .pop-close,
+.popbox .close-btn { position: absolute; right: 10px; top: 5px; line-height: 24px; height: 24px; color: #f04e16; -webkit-border-radius: 8px; }
+.popbox .pop-close i { font-size: 15px; line-height: 30px; padding-right: 5px; }
+.pop-hd { font-weight: 700; font-size: 14px; color: #f04e16; margin-bottom: 12px; }
+.pop-bd { padding-bottom: 15px; }
+.popbox td { padding: 5px; }

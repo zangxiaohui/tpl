@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Base
+   ========================================================================== */
+a { text-decoration: none; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, p, form { margin: 0; }
+button,fieldset,figure,td,th { padding: 0; margin: 0; }
+ul, ol { padding-left: 0; list-style: none; }
+h1, h2, h3, h4, h5, h6, button, input, select, textarea { font-size: 100%; }
+img { border: 0; vertical-align: middle; }
+table { border-collapse: collapse; border-spacing: 0; width: 100%; }
+em, i { font-style: normal; }
+em,
+i,
+u { font-style:normal }
+.fl { float:left }
+.fr { float:right }
+.al { text-align:left }
+.ac { text-align:center }
+.ar { text-align:right }
+.hide { display:none }
+.mt-1 { margin-top: -1px }
+.mt-2 { margin-top: -2px }
+.mt-3 { margin-top: -3px }
+.mt5 { margin-top: 5px }
+.mt10 { margin-top: 10px }
+.mt20 { margin-top: 20px }
+.mr5 { margin-right: 5px }
+.mr6 { margin-right: 6px }
+
+.mr10 { margin-right: 10px }
+.mr20 { margin-right: 20px }
+.mb5 { margin-bottom: 5px }
+.mb10 { margin-bottom: 10px }
+.ml5 { margin-left: 5px }
+.ml10 { margin-left: 10px }
+.ml20 { margin-left: 20px }
+.mb20 { margin-bottom: 20px }
+.pt5 { padding-top: 5px }
+.pt10 { padding-top: 10px }
+.pr5 { padding-right: 5px }
+.pr10 { padding-right: 10px }
+.pb5 { padding-bottom: 5px }
+.pb10 { padding-bottom: 10px }
+.pl5 { padding-left: 5px }
+.pl10 { padding-left: 10px }
+.font-price { font-family: verdana }
+.hidden { display: none;}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+abbr[title] { border-bottom: 1px dotted; }
+dfn { font-style: italic; }
+hr { -moz-box-sizing: content-box; box-sizing: content-box; height: 0; }
+mark { background: #ff0; color: #000; }
+code, kbd, pre, samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 100%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+/* ==========================================================================
+   html5
+   ========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden] {
+display: none;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+button, html input[type="button"], /* 1 */ input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+legend { display: none; }
+fieldset { border: 0 none; }
+/* imgArea */
+.imgArea { float: left; }
+.imgArea img { width: 100%; height: 100%;}
+.txtArea { overflow: hidden; *zoom:1;
+}
+.txtArea .desc { display: -webkit-box;/*  -webkit-line-clamp: 3; */ -webkit-box-orient: vertical; word-break: break-all; overflow: hidden; }
+/* thumbnail */
+.thumbnail-wrap { display: table; table-layout: fixed; }
+.thumbnail { display: table-cell; *display: block;
+text-align: center; vertical-align: middle; overflow: hidden; }
+.thumbnail img { max-width: 100%; max-height: 100%; _width: 100%; _height: 100%; vertical-align: middle; }
+.thumbnail i { display: inline-block; width: 0; height: 100%; vertical-align: middle; }/* ie6/7下可以使用此方法兼容 */
+/* ==========================================================================
+   Common
+   ========================================================================== */
+.fl { float: left; }
+.fr { float: right; }
+/* clearfix */
+.cf:before, .cf:after { content: ""; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1
+}
+.more-arr,
+.bc-arr { font-family: simsun; }
+[class^="icon"] {
+padding-right: 5px;
+}
+.asterisk { color: #f00d33;  padding: 0 3px; vertical-align: middle; display: inline-block;  }
+textarea { overflow: auto; }
+
+.bdr0 { border-right: 0 none !important;}
+.mb20 { margin-bottom: 20px;}
+
+
+html { font-size: 62.5%; }
+a { color: #666; }
+body { color: #666; font: 12px/1.5 microsoft yahei, Arial, Helvetica, sans-serif; background: #fff; }
+.wrapper { max-width: 1200px; _width: 1200px; margin-left: auto; margin-right: auto; padding: 0 10px; }
+.wrapper:after { content: ""; display: table; clear: both; }
+/* arrow */
+/*.arrow { position: absolute; top: 50%; margin-top: -4px; }
+.arrow * { position: absolute; top: 0; left: 0; width: 0; height: 0; border: 0 dashed transparent; overflow: hidden; }*/
+/* arrow-right */
+.arr-r * { border-left-style: solid; border-width: 4px 0 4px 4px; }
+.arr-r em { left: 1px; }
+.arr-r span { border-left-color: #3675bb; }
+.tri { position: absolute; width: 0; height: 0; border: 0 dashed transparent; overflow: hidden; }
+.pipe { padding: 0 8px; }
+
+:-moz-placeholder {
+ color: #666;
+font-size: 12px;
+}
+::-moz-placeholder {
+ color: #666;
+font-size: 12px;
+}
+::-webkit-input-placeholder {
+ color: #666;
+font-size: 12px;
+}

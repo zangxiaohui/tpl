@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>购物车</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/cart.css" rel="stylesheet">
+</head>
+<body>
+<div class="wp" style="margin-top:40px">
+  <div class="cart">
+    <div class="cart-filter-bar">
+      <ul class="switch-cart">
+        <li class="first current"><a href="#"><em>全部商品</em><span class="num">3</span><span class="pipe"></span></a></li>
+        <li><a href="#"><em>降价商品</em><span class="num">1</span><span class="pipe"></span></a></li>
+        <li class="disabled"><a href="javascript: void(0);"><em>库存紧张</em><span class="num">0</span><span class="pipe"></span></a></li>
+      </ul>
+      <div class="cart-sum">已选商品（不含运费）<strong class="price">¥<em>13.90</em></strong><a class="submit-btn">结&nbsp;算</a></div>
+      <div class="wrap-line">
+        <div class="floater"></div>
+      </div>
+    </div>
+    <div class="cart-main">
+      <div class="cart-table-th">
+        <div class="th th-chk">
+          <div class="select-all">
+            <div class="cart-checkbox cart-checkbox-checked">
+              <input class="J_CheckBoxShop" id="J_SelectAllCbx1" type="checkbox" name="select-all" value="true">
+              <label for="J_SelectAllCbx1">勾选购物车内所有商品</label>
+            </div>
+            &nbsp;&nbsp;全选</div>
+        </div>
+        <div class="th th-item">
+          <div class="td-inner">商品信息</div>
+        </div>
+        <div class="th th-info">
+          <div class="td-inner">&nbsp;</div>
+        </div>
+        <div class="th th-price">
+          <div class="td-inner">单价（元）</div>
+        </div>
+        <div class="th th-amount">
+          <div class="td-inner">数量</div>
+        </div>
+        <div class="th th-sum">
+          <div class="td-inner">金额（元）</div>
+        </div>
+        <div class="th th-op">
+          <div class="td-inner">操作</div>
+        </div>
+        <div class="th th-vil hidden">
+          <div class="td-inner">村民信息</div>
+        </div>
+      </div>
+      <div class="cart-tbody order-body">
+        <div class="shop">
+          <div class="cart-checkbox">
+            <input class="" id="" type="checkbox" name="" value="" checked="">
+            <label for="">勾选此店铺下所有商品</label>
+          </div>
+          <span class="shop-name">店铺：<a href="#" target="_blank" title="">帮宝适官方旗舰店</a></span></div>
+        <div class="order-content">
+          <div class="item-list">
+            <div class="bundle  bundle-last ">
+              <div class="bundle-hd">
+                <div class="td-chk"></div>
+                <div class="bd-title">满268包邮2<i class="icon-bd-title"></i></div>
+                <div class="bd-promos">
+                  <div class="bd-has-promo">已享优惠:<span class="bd-has-promo-content">包邮</span>&nbsp;&nbsp;</div>
+                  <div class="act-promo">
+                    <div class="act-promo-wrapper">
+                      <ul class="act-promo-hint J_ScrollingPromoHint">
+                        <li>满268元,享包邮</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bundle-main">
+                <div class="item-list">
+                  <div class="item-holder">
+                    <div class="item-body cf item-act  first-item  last-item">
+                      <ul class="item-content clearfix">
+                        <li class="td td-chk">
+                          <div class="td-inner">
+                            <div class="cart-checkbox">
+                              <input class="J_CheckBoxItem" id="" type="checkbox" name="" value="" checked="">
+                              <label for="">勾选商品</label>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="td td-item">
+                          <div class="td-inner">
+                            <div class="item-pic J_ItemPic img-loaded"><a href="#" target="_blank" class="J_MakePoint"><img src="https://img.alicdn.com/bao/uploaded/i4/TB1DpjCKFXXXXbaXVXXXXXXXXXX_!!0-item_pic.jpg_80x80.jpg" class="itempic J_ItemImg"></a></div>
+                            <div class="item-info">
+                              <div class="item-basic-info"> <a href="#" target="_blank" title="#" class="item-title J_MakePoint">绿帮宝适超薄干爽纸尿裤XL128*2 婴儿宝宝尿不湿 官方旗舰店 正品</a> </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="td td-info">
+                          <div class="item-props "></div>
+                        </li>
+                        <li class="td td-price">
+                          <div class="td-inner">
+                            <div class="item-price price-promo-">
+                              <div class="price-content">
+                                <div class="price-line"><em class="J_Price price-now" tabindex="0">578.00</em></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="td td-amount">
+                          <div class="td-inner">
+                            <div class="amount-wrapper ">
+                              <div class="item-amount "><a href="#" class="J_Minus no-minus">-</a>
+                                <input type="text" value="1" class="text text-amount J_ItemAmount" data-max="1755" data-now="1" autocomplete="off">
+                                <a href="#" class="J_Plus plus">+</a></div>
+                              <div class="amount-msg J_AmountMsg"></div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="td td-sum">
+                          <div class="td-inner"><em tabindex="0" class="J_ItemSum number">578.00</em>
+                            <div class="J_ItemLottery"></div>
+                          </div>
+                        </li>
+                        <li class="td td-op">
+                          <div class="td-inner"><a title="移入收藏夹" class="btn-fav J_Fav J_MakePoint" data-point-url="//www.atpanel.com/jsclick?cache=14491536342811&amp;mycart=collect" href="#">移入收藏夹</a><a href="javascript:;" data-point-url="//www.atpanel.com/jsclick?cache=14491536342812&amp;cartlist=delete" class="J_Del J_MakePoint">删除</a></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="J_FloatBarHolder" class="float-bar-holder">
+      <div id="J_FloatBar" class="float-bar clearfix default" style="position: static;">
+        
+        <div class="float-bar-wrapper">
+          <div id="J_SelectAll2" class="select-all J_SelectAll">
+            <div class="cart-checkbox">
+              <input class="J_CheckBoxShop" id="J_SelectAllCbx2" type="checkbox" name="select-all" value="true">
+              <label for="J_SelectAllCbx2">勾选购物车内所有商品</label>
+            </div>
+            &nbsp;全选</div>
+          <div class="operations"><a href="#" hidefocus="true" class="J_DeleteSelected" >删除</a><a href="#" hidefocus="true" class="J_ClearInvalid hidden" style="display: inline;">清除失效宝贝</a><a href="#" hidefocus="true" class="J_BatchFav">移入收藏夹</a><a href="#" hidefocus="true" class="J_BatchShare">分享</a><a href="＃" hidefocus="true" class="J_BatchCompare" target="_blank" data-tips="" data-point="tbcart.8.41">开始对比</a></div>
+          <div class="float-bar-right">
+            <div id="J_ShowSelectedItems" class="amount-sum"><span class="txt">已选商品</span><em id="J_SelectedItemsCount">0</em><span class="txt">件</span>
+              <div class="arrow-box"><span class="selected-items-arrow"></span><span class="arrow"></span></div>
+            </div>
+            <div id="J_CheckCOD" class="check-cod" style="display: none;"><span class="icon-cod"></span><span class="s-checkbox J_CheckCOD"></span>货到付款</div>
+            <div class="pipe"></div>
+            <div class="price-sum"><span class="txt">合计（不含运费）:</span><strong class="price">¥<em id="J_Total">0.00</em></strong></div>
+            <div class="btn-area"><a href="javascript:void(0)" id="J_Go" class="submit-btn need-separate submit-btn-disabled" aria-label="请注意如果没有选择宝贝，将无法结算"><span>结&nbsp;算</span><b></b></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* ==================================
+   地址表格
+   ================================== */
+.deliver-address { margin: 15px 0 0 25px }
+.addr-table { table-layout: fixed; border: 1px solid #e7e7e7 }
+.addr-table th { height: 40px; padding: 0 10px; background: #f2f2f2; text-align: left }
+.addr-table .col-consignee { width: 80px }
+.addr-table .col-postcode { width: 80px }
+.addr-table .col-phone { width: 130px }
+.addr-table .col-region { }
+.addr-table .col-address { }
+.addr-table tr { border-bottom: 1px solid #e7e7e7 }
+.addr-table td { padding: 5px 10px; white-space: normal; word-wrap: break-word; word-break: break-all; }
+.addr-table .setdefault { padding: 4px 5px; background: #f60; color: #fff; border: 1px solid #f60; border-radius: 3px; visibility: hidden; }
+.addr-table .deftip { padding: 2px 5px; border: 1px solid #f60; background: #ffd6cc; color: #f30; border-radius: 3px; }
+.addr-table tr:hover td { background-color: #eee }
+.addr-table tr:hover .setdefault { visibility: visible; }
+/* ==================================
+   地址表单
+   ================================== */
+.addr-box { background: #fbfbfb url(../images/2e339fd585fd2281ebfd181eca978de8.png) repeat-x 0 100%; padding: 10px; }
+.addr-box .field .ui-tooltips { float: left; margin-left: 10px; white-space: nowrap; }
+.addr-box .ui-input { width: 240px; }
+.addr-box .ui-input-short { width: 160px; }
+.addr-box .ui-textarea { width: 300px; }
+/* ==================================
+   地址列表
+   ================================== */
+ /* ==========================================================================
+   addr
+   ========================================================================== */
+.member-info-item { padding: 10px 10px 10px 20px; border-bottom: 1px dashed #ececec }
+.member-info-item .fa { color: #dad9d9; float: left; margin-top: 2px; margin-left: -20px }
+.member-info-item .member-text { display: inline-block; *display:inline;
+*zoom:1
+}
+.member-info-consignee { padding-right: 58px; font-size: 14px; }
+.member-info-local { border-bottom: none }
+.member-info-local address { height: 44px; line-height: 22px; word-break: break-all; word-wrap: break-word; overflow: hidden; font-style: normal; }
+.addr-item { position: relative; float: left; width: 302px; margin: 0 14px; overflow: hidden; }
+.addr-item .addr-inner { position: relative; cursor: pointer; height: 153px; padding: 6px 16px; border-left: 1px solid #ebebeb; border-right: 1px solid #ebebeb; box-shadow: 0 1px 2px rgba(0,0,0,.12); background: url(../images/sprites-y.png?4d6399aa) repeat-x -5px -340px; }
+.member-info-op { position: absolute; z-index: 1; display: none; right: 10px; bottom: 16px; }
+.member-info-op .ui-btn-xs { background-color: #fafafa; border: 1px solid #c2c2c2; min-width: 24px; _width: 24px; padding: 0 5px; height: 20px; line-height: 20px; display: inline-block; border-radius: 3px; text-align: center; vertical-align: top; -webkit-transition: .3s; transition: .3s; cursor: pointer; }
+.addr-cur .addr-inner { border-right-color: #c6c4c4; border-left-color: #c6c4c4; background-position: -5px 0; }
+.addr-cur:after { right: 0; bottom: 0; background-image: url(../images/sprites.png?7a9640e4); background-position: -369px -41px; width: 38px; height: 38px; content: ""; position: absolute; }
+.addr-inner:hover { border-right-color: #d3d1d1; border-left-color: #d3d1d1; color: #333; }
+.addr-item:hover .member-info-op { display: block }
+.addr-cur .member-info-op { right: 20px; }
+.addr-item .deftip,
+.addr-item .setdefault { position: absolute; top: -18px; right: 10px; background: #f974ba; color: #fff; padding: 0 10px; -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px; border-radius: 0 0 5px 5px; -webkit-transition: top .2s ease; -moz-transition: top .2s ease; -o-transition: top .2s ease; -ms-transition: top .2s ease; transition: top .2s ease }
+.addr-item .deftip { text-decoration: none; background: #ee3495; }
+.addr-item:hover .setdefault { top: 0 }
+.addr-def .deftip { top: 1px }
+.addr-def:hover .setdefault { top: -18px; }

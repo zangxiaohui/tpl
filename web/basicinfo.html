@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>我的资料</title>
+<script src="../web/js/jquery-1.10.2.min.js"></script>
+<script src="../web/js/main.js"></script>
+<link href="../web/css/reset.css" rel="stylesheet">
+<link href="../web/css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="../web/css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="../web/css/common.css" rel="stylesheet">
+<link href="../web/css/layout.css" rel="stylesheet">
+<link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper mt20 mb20">
+  <div class="m-user-info"> <a href="#" target="_blank" class="u-avatar"> <img src="images/user-default-head.jpg" width="100" height="100" id="J_userAvatar" class="hidden"> <i class="u-user-imgbg u-user-img-female" id="J_avatar"><!-- .u-user-img-male男性 .u-user-img-female女性 .u-user-img-unknown无性别 --> </i>
+    <div class="u-upload-head"><i class="fa fa-upload"></i>上传头像</div>
+    <div class="user-in-vip" id="J_userLevel"><i class="uv-1"></i></div>
+    </a>
+    <div class="u-user-fav"> <span class="user-name">您好，尊敬的<span id="J_displayName">会员</span></span> </div>
+  </div>
+  <div class="account">
+    <div class="account-info cf">
+      <div class="avatar"> <img src="images/user_pic@82.png" width="82" height="82" alt="桃桃酥_007"> <span class="j_avatar_edit edit">编辑头像</span> </div>
+      <div class="txtArea">
+        <p><span>登录名：<strong class="userName">180*****783</strong></span></p>
+        <p><span class="">资料完整度：</span><span class="u-profile"><i style="width: 45px;">50%</i></span></p>
+      </div>
+    </div>
+  </div>
+  <div class="form-box basic-info-form">
+    <div class="form-hd"> </div>
+    <div class="form-bd">
+      <div class="field">
+        <label for="J_Nickname" class="ui-label"><i class="asterisk">*</i>昵称：</label>
+        <input id="J_Nickname" class="ui-input" type="text" value="桃*****7" maxlength="20">
+        <span class="ui-tooltips arrow-left-center warning hide"><i class="icon"></i><span></span></span><span class="ui-tooltips arrow-left-center info"><span>4-20个字符，可由中英文、数字组成</span></span> </div>
+      <div class="field">
+        <label for="J_Realname" class="ui-label">真实姓名：</label>
+        <input id="J_Realname" class="ui-input" type="text" value="桃*7" maxlength="6">
+      </div>
+      <div class="field">
+        <label for="" class="ui-label"><i class="asterisk">*</i>性别：</label>
+        <label for="J_gender1" class="except">
+          <input id="J_gender1" type="radio" name="_fm.b._0.g" value="0">
+          男</label>
+        <label for="J_gender2" class="except">
+          <input id="J_gender2" type="radio" name="_fm.b._0.g" value="1">
+          女</label>
+      </div>
+      <div class="field">
+        <input type="hidden" name="mobile" value="180*****783">
+        <label class="ui-label">移动电话：</label>
+        <div class="mobile-row">
+          <label class="c333">180*****783</label>
+          <label class="c999">(已验证)</label>
+          <a href="#" target="_blank" class="mobile-edit-link">修改</a></div>
+      </div>
+      <div class="field">
+        <label for="J_Email" class="ui-label">邮箱：</label>
+        <input id="J_Email" type="text" name="email" disabled="" class="ui-input">
+        <a href="#" target="_blank" class="verify-email">验证邮箱</a> </div>
+      <div class="field field-region">
+        <label for="J_Street" class="ui-label"><i class="asterisk">*</i>地区：</label>
+        <select name="" id="">
+          <option value="">省</option>
+        </select>
+        <select name="" id="">
+          <option value="">市</option>
+        </select>
+        <select name="" id="">
+          <option value="">区</option>
+        </select>
+      </div>
+      <div class="field field-street">
+        <label for="J_Street" class="ui-label"><i class="asterisk">*</i>详细地址：</label>
+        <textarea class="ui-textarea" name="addressDetail" id="J_Street" placeholder="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息" data-ph="建议您如实填写详细收货地址，例如街道名称，门牌号码，楼层和房间号等信息">人民西路北 五爱家园5号楼1506</textarea>
+      </div>
+      <div class="field btn-field">
+        <button type="submit" class="ui-btn1 ui-btn-m">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>ui</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/common.css" rel="stylesheet">
+</head>
+<body>
+<section class="wrapper"> 
+  <!--price--> 
+  <span class="price"><span class="u-yen">¥</span><em class="u-price">0.00</em></span>
+  <div class="price price-original"> <span class="u-yen">¥</span> <em class="u-price">30.80</em> </div>
+  <!--amount-->
+  <div class="amount-widget"><a href="###" class="amount-decrease no-decrease"><span class="line-horizontal"></span></a>
+    <input type="text" value="1" class="amount-input" data-max="1755" data-now="1" autocomplete="off">
+    <a href="###" class="amount-increase"><span class="line-horizontal"></span><span class="line-verticality"></span></a></div>
+  <!--radio--> 
+  <span class="ui-radio">
+  <input class="ui-radio-normal" id="J_cod_method_radio" type="radio" name="pay_type_radio" simulate="done">
+  <label class="ui-radio-simulation" for="J_cod_method_radio"></label>
+  </span> 
+  <!--checkbox--> 
+  <span class="ui-checkbox">
+  <input class="ui-checkbox-normal" id="J_SelectAll" type="checkbox" name="select-all">
+  <label for="J_SelectAll" class="ui-checkbox-simulation">勾选</label>
+  </span> 
+  <!--删除按钮-->
+  <button type="button" title="删除" class="m-trash"> <i class="trash-lid"></i> <i class="trash-can"></i> </button>
+  <a href="#" class="del-btn fl" title="删除">删除</a> 
+  <!--safety-box-->
+  <div id="J_progress" class="z-safety-low">
+    <div class="m-safety-box"> <span class="u-safety-labe">安全级别：</span> <span class="u-safety-level"> <span class="J_progFont" data-lv3="高" data-lv2="中" data-lv1="低" data-lv0="低">低</span><i class="i-safety-icon"></i> </span>
+      <div class="u-safety-linebg">
+        <div class="u-safety-line"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 分页 -->
+  <div class="paging m-paging">
+    <div class="ui-paging cf">
+      <div class="pages"> <a class="prev disabled" href="#"> <i class="fa fa-chevron-left"></i> <span>上一页</span> </a> <a href="#" >1</a> <a class="curr" href="#">2</a><a href="#" >3</a><a href="#" >4</a> <span class="dot">...</span><a class="next" href="#"> <span>下一页</span> <i class="fa fa-chevron-right"></i> </a> </div>
+      <div class="total"> 共 100 页， </div>
+      <div class="form"> <span class="text">到第</span>
+        <input class="input J_Input" type="number" value="91" min="1" max="100" aria-label="页码输入框">
+        <span class="text">页</span> <span class="btn J_Submit" role="button" tabindex="0">确定</span> </div>
+    </div>
+  </div>
+  <!-- rate-score -->
+  <div class="rate-score mb20"> <span class="score-value-no"><em style="width:80%"></em></span></div>
+  <!-- star-box --> 
+  <span class="rank-star"> <span class="star1"></span> <span class="star2"></span> <span class="star3"></span> <span class="star4"></span> <span class="star5"></span></span> 
+  
+  <!-- pop -->
+  <div id="J_modal_confirm" class="m-pop m-pop-1">
+    <div class="pop-wrap"> <a href="javascript:;" role="button" class="if-close J_close">关闭</a>
+      <div class="pop-bd">
+        <h4 class="info"> <i class="fa fa-question-o"></i><span class="J_message">确定要删除此订单吗？</span> </h4>
+        <div class="action"> <a href="javascript:;" role="button" class="ui-btn-m ui-btn2 J_ok J_close">确定</a><a href="javascript:;" role="button" class="ui-btn-m ui-btn3 J_close">取消</a> </div>
+      </div>
+    </div>
+  </div>
+  <!-- ui-tooltips --> 
+  <span class="ui-tooltips arrow-top-center "><i class="icon"></i><span>请选择您的性别</span></span> </section>
+</body>
+<script>
+  var d = $(".J_toggle_btn"),
+    c = $(".J_toggle_cont");
+  d.on("click", function() {
+    return "none" == c.css("display") ? ($(this).parent().addClass("is-open"), c.slideDown().attr("aria-expanded", !0)) : ($(this).parent().removeClass("is-open"), c.slideUp().attr("aria-expanded", !1)), !1
+  })
+
+</script>
+</html>

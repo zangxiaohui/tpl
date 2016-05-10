@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>退款流程</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/form.css" rel="stylesheet">
+<link href="css/flowstep.css" rel="stylesheet">
+<link href="css/btn.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+  <div class="refund-step refund-step-4">
+    <ol class="refund-step-bar">
+      <li class="refund-step-start-done">
+        <dl>
+          <dt> <strong><span class="refund-step-no">1</span><em class="refund-step-name">买家申请退货</em></strong> </dt>
+          <dd class="refund-step-status"></dd>
+        </dl>
+      </li>
+      <li class="refund-step-cur">
+        <dl>
+          <dt> <strong><span class="refund-step-no">2</span><em class="refund-step-name">商家处理退货申请</em></strong> </dt>
+          <dd class="refund-step-status"></dd>
+        </dl>
+      </li>
+      <li class="">
+        <dl>
+          <dt> <strong><span class="refund-step-no">3</span><em class="refund-step-name">买家退货给商家</em></strong> </dt>
+          <dd class="refund-step-status"></dd>
+        </dl>
+      </li>
+      <li class="refund-step-end">
+        <dl>
+          <dt> <strong><span class="refund-step-no">4</span><em class="refund-step-name">商家确认收货，退款完成</em></strong> </dt>
+          <dd class="refund-step-status"></dd>
+        </dl>
+      </li>
+    </ol>
+  </div>
+  <div class="form-box refund-form">
+    <div class="field">
+      <label for="" class="ui-label"><b class="asterisk">*</b>退款原因</label>
+      <select class="" name="">
+        <option selected="true" value=""> 请选择退款原因 </option>
+        <option value=""> 尺寸不对 </option>
+        <option value=""> 收到商品破损 </option>
+      </select>
+      <div class="ui-auth" style="display:block;">
+        <div class="ui-msg">
+          <div class="ui-msg-inner ui-msg-error">
+            <p>此项为必填项!</p>
+            <i class="ui-msg-icon"></i></div>
+          <i class="ui-msg-arrow ui-msg-arrow-top"></i></div>
+      </div>
+    </div>
+    <div class="field">
+      <label for="" class="ui-label"> 退款说明</label>
+      <textarea class="ui-textarea" data-maxlength="200" name="" id=""></textarea>
+      <span class="ui-text-counter">还可以输入<strong>200</strong>字</span> </div>
+    <div class="field">
+      <label for="" class="ui-label"> 上传凭证</label>
+      <div class="fn-uploader" data-name="pic" data-max="3" data-tip="每张图片大小不超过5M，最多3张，支持GIF、JPG、PNG、BMP格式">
+        <div class="uploader-preview">
+          <ul>
+            <li> <a href="#" target="_blank"><img src="images/pic.gif" height="40"></a><span class="uploader-preview-remove">删除</span> </li>
+            <li> <a href="#" target="_blank"><img src="images/pic.gif" height="40"></a><span class="uploader-preview-remove">删除</span> </li>
+          </ul>
+        </div>
+        <div class="uploader-preview"></div>
+        <div class="uploader-action"> <span class="uploader-btn btn"><span class="btn-text">上传图片</span>
+          <input type="file" class="file-input" name="file" accept="image/*">
+          </span> <span class="uploader-tip">每张图片大小不超过5M，最多3张，支持GIF、JPG、PNG、BMP格式</span> </div>
+      </div>
+    </div>
+    <div class="field btn-field">
+      <button class="refund-btn-wrapper" type="submit"><span class="refund-btn btn">提交退款申请</span> </button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

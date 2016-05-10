@@ -1,0 +1,25 @@
+@import url(flowstep.css);
+@import url(order.css);
+.wrapper { width: 900px; }
+.h { color: #f60; }
+.m { padding: 0 5px 10px; border: 1px solid #DADADA; background: #EDEDED; margin-bottom: 20px; }
+.mt { padding: 0 8px; height: 30px; line-height: 30px; font-size: 14px; color: #333; }
+.mc { padding: 5px 8px; background: #fff; }
+/* 状态、提示 */
+.order-state { padding: 0 5px; border: 1px solid #EED97C; background: #FFFCEB; }
+.order-state .mt { padding: 4px 8px; height: 25px; line-height: 25px; border-bottom: 1px dotted #EED97C; }
+.order-state .mc { padding: 10px 8px; background: #FFFCEB; }
+/* 物流跟踪 */
+.logistics-list { position: relative; margin: 15px 15px 0; }
+.logistics-list:before { content: " "; background-color: #fff; position: absolute; top: -2px; left: 0; width: 10px; height: 4px; z-index: 1; }
+.logistics-list li { border-left: 1px solid #d9d9d9; padding: 0 10px 12px; }
+.logistics-list li:before { content: ''; border: 3px solid #f3f3f3; background-color: #d9d9d9; display: inline-block; width: 5px; height: 5px; border-radius: 5px; margin-left: -16px; margin-right: 10px }
+.logistics-list .latest { border-left: 0 none;  }
+.logistics-list .latest:before { background-color: #fe4300; border-color: #f8e9e4 }
+/* 订单信息 */
+.order-info .mc dl { padding: 10px 5px; border-top: 1px solid #EDEDED; }
+.order-info .mc dl:first-of-type { border-top: 0 none; }
+.order-info .mc dt { margin-bottom: 4px; font-weight: 700; color: #000; }
+.order-table { border-top: 1px solid #e6e6e6; }
+.order-table th { height: 28px; background-color: #f7f7f7; }
+.checkbar { padding: 15px 10px; text-align: right; }

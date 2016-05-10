@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>修改密码</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/common.css" rel="stylesheet">
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/pwd.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper mt20 mb20">
+  <form method="post" class="ui-form" id="J_Form">
+    <div class="pwd-form">
+      <div class="field">
+        <label class="ui-label" for="oldPwd">当前登录密码：</label>
+        <input type="password" class="ui-input" id="oldPwd" name="_fm-pas-_0-o" autocomplete="off" >
+      </div>
+      <div class="field">
+        <label class="ui-label" for="newPwd">新的登录密码：</label>
+        <input type="password" class="ui-input" id="newPwd" name="_fm-pas-_0-n" autocomplete="off" >
+        设置不符合要求，请重新设置。 </div>
+      <div class="field">
+        <label class="ui-label" for="newPwdConfirm">确认新的登录密码：</label>
+        <input type="password" class="ui-input" id="newPwdConfirm" name="_fm-pas-_0-c">
+      </div>
+      <div class="field field-btn">
+        <button type="submit" class="ui-btn-m ui-btn1">确定</button>
+      </div>
+    </div>
+  </form>
+</div>
+</body>
+</html>

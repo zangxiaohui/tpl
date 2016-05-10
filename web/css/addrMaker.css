@@ -1,0 +1,5 @@
+html,
+body { overflow-x: hidden!important }
+#content { width: 800px }
+.main-wrap { border: 0; margin: 0 auto!important }
+.form-box { margin-top: 20px }

@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<title>找回密码</title>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/main.js"></script>
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!--[if lte IE 7]>
+<link href="css/font-awesome-ie7.min.css" rel="stylesheet">
+<![endif]-->
+<link href="css/common.css" rel="stylesheet">
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/pwd.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-pwd">
+  <div class="flowstep z-step4-done  z-step2">
+    <ol>
+      <li class="step-1">
+        <div class="step-name">填写帐号</div>
+        <div class="step-icon"> <em class="u-progress-stage-bg"></em> <i class="u-stage-icon-inner">1<em class="bg"></em></i></div>
+      </li>
+      <li class="step-2">
+        <div class="step-name">验证身份</div>
+        <div class="step-icon"><em class="u-progress-stage-bg"></em> <i class="u-stage-icon-inner">2<em class="bg"></em></i></div>
+      </li>
+      <li class="step-3">
+        <div class="step-name">重置密码</div>
+        <div class="step-icon"><em class="u-progress-stage-bg"></em> <i class="u-stage-icon-inner">3<em class="bg"></em></i></div>
+      </li>
+      <li class="step-4">
+        <div class="step-name">成功</div>
+        <div class="step-icon"> <em class="u-progress-stage-bg"></em> <i class="u-stage-icon-inner">4<em class="bg"></em></i></div>
+      </li>
+    </ol>
+    <div class="u-progress-bar total-steps-4">
+      <div class="u-progress-bar-inner"></div>
+    </div>
+  </div>
+  <!-- 验证——步骤一 -->
+  <div class="ui-form vf-form J_step">
+    <div class="field">
+      <label class="ui-label" for="accName">登录名：</label>
+      <input type="text" class="ui-input" id="accName" name="" placeholder="请输入手机号/邮箱" value="">
+    </div>
+    <div class="field">
+      <label class="ui-label" for="authCode">验证码：</label>
+      <input type="text" id="authCode" name="authCode" class="ui-input ui-input-short">
+      <img alt="验证码" src="" id="auth-img"> <a id="J_changeCodePng" href="javascript:;" role="button" class="u-code-change">换一张</a></div>
+    <div class="field field-btn"> <a href="javascript:;" role="button" class="ui-btn-m ui-btn1"> 下一步 </a> </div>
+  </div>
+  <!-- 验证——步骤二 -->
+  <div class="ui-form vf-form J_step">
+    <div class="J_before">
+      <p class="ui-tip tac">您正在找回 “<em>1888888888</em>” 帐号密码，请选择身份验证方式。帐号不对？<a href="#">返回重填</a></p>
+      <ul class="select-strategy">
+        <li><i class="icon icon-phone"></i>
+          <div class="desc">
+            <h3 class="title">通过 "手机验证码"</h3>
+            <p class="notice">如果你的手机还在正常使用，请选择此方式</p>
+          </div>
+          <a href="#" class="ui-btn-s ui-btn2">立即验证</a> </li>
+        <li> <i class="icon icon-email"></i>
+          <div class="desc">
+            <h3 class="title">通过 "邮箱验证码"</h3>
+            <p class="notice">如果你的邮箱还在使用，请选择此方式</p>
+          </div>
+          <a href="#" class="ui-btn-s ui-btn2">立即验证</a> </li>
+      </ul>
+    </div>
+    <!-- 验证——步骤二——手机验证 -->
+    <div class="J_after J_after_phone m-phone-after">
+      <p class="ui-tip">正发送到&nbsp;&nbsp;<em class="J_phone_name">180*****783</em>&nbsp;&nbsp; ，请注意查收。并在下方输入短信中的6位验证码：</p>
+      <div class="field">
+        <label class="ui-label" for="J_Phone_Checkcode">短信验证码：</label>
+        <input type="text" class="ui-input ui-input-short" id="J_Phone_Checkcode" name="" maxlength="6"  placeholder="短信验证码" value="">
+        <a href="javascript:;" role="button" id="J_GetCode" class="ui-btn-m ui-btn2 getcheckcode" >获取验证码</a> </div>
+      <div class="field field-btn"> <a href="javascript:;" id="J_phone_sure" role="button" class="ui-btn-m ui-btn1"> 确定 </a> </div>
+    </div>
+    <!-- 验证——步骤二——邮箱验证 -->
+    <div class="J_after J_after_email m-email-after">
+      <div class="field">
+        <label class="ui-label" for="">您的邮箱：</label>
+        <div class="ui-input-text"> zan****ohui@163.com</div>
+      </div>
+      <div class="field">
+        <button type="button" class="ui-btn-m ui-btn3" id="J_GetCode_Email">点此免费获取</button>
+      </div>
+      <div class="field">
+        <label class="ui-label" for="J_Checkcode">验证码：</label>
+        <input name="" value="" id="J_Checkcode" class="ui-input ui-input-short" type="text" maxlength="6" placeholder="6位数字">
+      </div>
+      <div class="field field-btn"> <a href="javascript:;" role="button" class="ui-btn-m ui-btn1"> 确定 </a> </div>
+    </div>
+  </div>
+  <!-- 验证——步骤三 -->
+  <div class="ui-form pwd-form J_step">
+    <div class="field">
+      <label class="ui-label" for="newPwd">新的登录密码：</label>
+      <input type="password" class="ui-input" id="newPwd" name="_fm-pas-_0-n" autocomplete="off" >
+    </div>
+    <div class="field">
+      <label class="ui-label" for="newPwdConfirm">确认新的登录密码：</label>
+      <input type="password" class="ui-input" id="newPwdConfirm" name="_fm-pas-_0-c">
+    </div>
+    <div class="field field-btn">
+      <button type="submit" class="ui-btn-m ui-btn1">确定</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
